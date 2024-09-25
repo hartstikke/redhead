@@ -79,3 +79,17 @@ $('.quote-span-wrapper').each(function (index) {
   let relatedEl = $('.quote_span-element').eq(index)
   relatedEl.appendTo($(this))
 })
+
+let buttons = $('.button-group')
+
+buttons.each(function () {
+  $(this).on('mouseover', function () {
+    console.log('mouseover')
+    $(this).find('.div-block').addClass('hover')
+  })
+
+  $(this).on('mouseleave', function () {
+    console.log('mouseleave')
+    $(this).find('.div-block').removeClass('hover')
+  })
+})
