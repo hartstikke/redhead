@@ -70,7 +70,7 @@ items.each(function () {
         duration: 1,
         ease: 'power4.inOut',
       },
-      '>2'
+      '>6'
     )
   }
 })
